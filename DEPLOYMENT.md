@@ -27,10 +27,10 @@ The repository has been configured with:
 
 ### 3. Trigger the Initial Deployment
 
-The deployment workflow will automatically run when changes are pushed to the `main` or `master` branch. To trigger it:
+The deployment workflow will automatically run when changes are pushed to the `main` branch. To trigger it:
 
-1. Merge this PR to your main/master branch, OR
-2. Go to **Actions** tab → **Deploy site** → **Run workflow** → Select branch → **Run workflow**
+1. Merge this PR to your `main` branch, OR
+2. Go to **Actions** tab → **Deploy site** → **Run workflow** → Select `main` branch → **Run workflow**
 
 ### 4. Wait for the Deployment to Complete
 
@@ -43,7 +43,7 @@ The deployment workflow will automatically run when changes are pushed to the `m
 1. Go to **Settings** → **Pages**
 2. Under **Build and deployment**:
    - **Source**: Select **Deploy from a branch**
-   - **Branch**: Select **gh-pages** (NOT main/master)
+   - **Branch**: Select **gh-pages** (NOT main)
    - **Folder**: Select **/ (root)**
 3. Click **Save**
 
@@ -60,7 +60,7 @@ After deployment is complete, visit your site at:
 
 ## Automatic Updates
 
-Once set up, your site will automatically rebuild and redeploy whenever you push changes to the main/master branch. The deployment workflow is triggered by changes to:
+Once set up, your site will automatically rebuild and redeploy whenever you push changes to the `main` branch. The deployment workflow is triggered by changes to:
 - Configuration files (`_config.yml`)
 - Content files (`.md`, `.html`, `.liquid`)
 - Assets (CSS, JS, images)
